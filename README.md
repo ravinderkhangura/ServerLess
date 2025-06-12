@@ -1,4 +1,4 @@
-# 📨 Message Processor - Serverless Solution (AWS CDK + Docker Lambda)
+# Message Processor - Serverless Solution (AWS CDK + Docker Lambda)
 
 This project implements a serverless message ingestion service using AWS CDK (Python) with a Docker-based Lambda function. It accepts messages via API Gateway, validates them, and stores them in DynamoDB.
 
@@ -45,10 +45,7 @@ cdk deploy
 }
 ```
 
-Invoke-RestMethod -Uri "https://APIENDPOINT/messages" `
->>   -Method POST `
->>   -Headers @{ "Content-Type" = "application/json" } `
->>   -Body '{"messageUUID": "05ceddd6-67e2-429a-a9c3-ea3edf6dbc7e", "messageText": "This is a test message", "messageDatetime": "2025-06-09 23:45:00"}'
+InvoInvoke-RestMethod -Uri "APIENDPOINT/prod/messages" -Method POST -Headers @{ "Content-Type" = "application/json" } -Body '{"messageUUID": "05ceddd6-67e2-429a-a9c3-ea3edf6dbc7e", "messageText": "This is a test message", "messageDatetime": "2025-06-09 23:45:00"}'
 
 5. Run unit tests
 
