@@ -9,7 +9,6 @@ This project implements a serverless message ingestion service using AWS CDK (Py
 - DynamoDB table with messageUUID as partition key
 - Input validation and error handling
 - Logging with Python's logging module
-- Configurable via environment variables
 - Unit tests with pytest
 
 ## Setup & Deployment on windows machine
